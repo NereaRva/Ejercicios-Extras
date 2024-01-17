@@ -85,6 +85,16 @@ if (age >= 18) {
 //->Ejercicio 3
 //Quiero comer Pizza
 
+// PRIMERA ITERACIÓN: Declara variable con un listado de comidas
+
+// SEGUNDA ITERACIÓN: Recorrer el listado de comidas
+
+// TERCERA ITERACIÓN: Si hay pizza me sirves pizza 
+
+// CUARTA ITERACIÓN: Declara variable estoy a dieta
+
+// QUINTA ITERACIÓN: Cuando quiera pizza me sirves brocoli
+
 const food = ["macarrones", "tortilla", "pizza", "brocoli"]
 const myFood = "pizza"
 const diet = "estoy a dieta"
@@ -95,3 +105,78 @@ for (let i = 0; i< food.length; i++) {
         console.log(`Me sirves ${myFood}`);   
     }
 }
+
+
+//_>Ejercicio 3
+//* → E-L-R-A-Y-O-E-S-E-L-M-E-J-O-R
+
+
+// PRIMERA ITERACIÓN: Declara variable con 'El rayo es el mejor'
+
+// SEGUNDA ITERACIÓN: Pasa ese texto a mayúsculas -> MDN es vuestro amigo
+
+// TERCERA ITERACIÓN: Modifica el string -> to array MDN 
+
+// CUARTA ITERACIÓN: Añade un '-' después de cada elemento
+
+// Devuelve en un string E-L-R-A-Y-O-E-S-E-L-M-E-J-O-R
+
+let textOriginal = "El rayo es el mejor"
+
+function iteraciones(texto) {
+
+  let resultado = texto
+  resultado = resultado.toUpperCase()
+  console.log(resultado);
+  resultado = resultado.split('')
+  console.log(resultado);
+  resultado = resultado.join('-');
+  console.log(resultado);
+
+  return resultado
+}
+
+let resultadoFinal = iteraciones(textOriginal);
+console.log(resultadoFinal);
+
+//-> Ejercicio 4
+// → La piramide - imprime por consola:
+// 1
+// 22
+// 333
+// 4444
+// 55555
+// 666666
+// 7777777
+// 88888888
+// 999999999
+
+for (let i = 1; i <= 9; i++) {
+  let linea = ''
+  for (let j = 1; j <= i; j++) {
+    linea += i;
+}
+console.log(linea)
+}
+
+//-> Ejercicio 5
+// La piramide Invertida- imprime por consola:
+// 999999999
+// 88888888
+// 7777777
+// 666666
+// 55555
+// 4444
+// 333
+// 22
+// 1
+
+for (let i = 9; i >= 1; i--) {
+  let inversa = '';
+  for (let j = 9; j >= i; j--) {
+      inversa += i;
+  }
+  console.log(inversa);
+}
+
+
